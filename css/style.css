@@ -20,11 +20,13 @@
 /* Google fonts & font family
 ==================================================*/
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap");
-@import "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i";
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap"); */
+/* @import "https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"; */
+/* @import "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i"; */
 
 /*
 font-family: 'Nunito Sans', sans-serif;
+font-family: 'Young Serif', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -34,13 +36,13 @@ font-family: 'Open Sans', sans-serif;
 ==================================================*/
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Young Serif", serif;
   font-size: 80px;
   line-height: 70px;
 }
 
 h4 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: capitalize;
   letter-spacing: 2px;
   position: relative;
@@ -64,9 +66,9 @@ h4:before {
 ==================================================*/
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .size-50 {
@@ -295,6 +297,11 @@ a.active {
 
 #about {
   padding: 100px 0;
+  background-image: url(../img/spikes-bg.webp);
+}
+
+#about h1 {
+  margin-bottom: 32px;
 }
 
 .about-img-div img {
@@ -316,7 +323,7 @@ a.active {
 
 #experience {
   padding: 100px 0;
-  background: #f3f3f3;
+  background: #fff;
 }
 
 .experience-row {
@@ -325,7 +332,7 @@ a.active {
 }
 
 .experience-row h3 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: capitalize;
   letter-spacing: 2px;
   color: var(--primary-color);
@@ -434,6 +441,7 @@ a.active {
   display: inline-block;
   margin-bottom: 1.2em;
   padding: 0.25em 1em 0.2em 1em;
+  border-radius: 8px;
 }
 
 /* works section
@@ -441,6 +449,7 @@ a.active {
 
 #works {
   padding: 100px 0;
+  background-image: url(../img/spikes-bg.webp);
 }
 
 .portfolio .categories-grid span {
@@ -484,6 +493,7 @@ a.active {
   overflow: hidden;
   display: block;
   margin-bottom: 30px;
+  border-radius: 8px;
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -575,6 +585,11 @@ a.active {
   height: 180px;
   width: 350px;
 }
+.portfolio_other h5 {
+  padding: 24px;
+  font-size: 24px;
+  text-align: center;
+}
 
 @media (min-width: 769px) {
   .portfolio_item img {
@@ -630,7 +645,7 @@ a.active {
 }
 
 .modal-content h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Young Serif", serif;
   font-size: 40px;
   line-height: 50px;
 }
@@ -640,7 +655,8 @@ a.active {
 
 #contact {
   padding: 100px 0;
-  background: #f3f3f3;
+  background: var(--primary-color);
+  /* background-image: url(../img/red-bg.png); */
 }
 
 #contact-form input,
@@ -781,7 +797,7 @@ fieldset {
 
 @media (max-width: 500px) {
   h1 {
-    font-family: "Playfair Display", serif;
+    font-family: "Young Serif", serif;
     font-size: 50px;
     line-height: 50px;
   }
@@ -851,4 +867,73 @@ fieldset {
 .modal-desc {
   margin-top: 24px;
   font-weight: 600;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 55px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  margin-top: 16px;
+  border-radius: 8px;
+  margin-top: 32px;
+}
+.download-btn:hover {
+  color: #fff;
+}
+
+.cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.contact-btn {
+  height: 44px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+}
+.wa-btn {
+  background-color: #25d366;
+  color: #fff;
+}
+.wa-btn:hover {
+  color: #fff;
+}
+.email-btn {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.email-btn:hover {
+  color: #fff;
+}
+#contact h5 {
+  font-size: 32px;
+  line-height: 42px;
+  margin: 0 0 32px;
+  font-family: "Young Serif", serif;
+  color: #fff;
+}
+#copyright {
+  background-color: var(--primary-color);
+  padding: 16px 0;
+}
+
+#copyright p {
+  color: #868686;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#copyright p span {
+  color: #fff;
 }
