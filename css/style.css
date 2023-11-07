@@ -882,10 +882,10 @@ fieldset {
   border-radius: 8px;
   margin-top: 32px;
 }
-.download-btn:hover {
+.download-btn:hover,
+.download-btn:focus {
   color: #fff;
 }
-
 .cta-wrapper {
   display: flex;
   align-items: center;
